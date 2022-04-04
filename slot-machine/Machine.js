@@ -3,13 +3,15 @@ class Machine extends React.Component {
     const { slot1, slot2, slot3 } = this.props
     const winner = (slot1 === slot2) && (slot2 === slot3)
     return (
-    <div>
-      <p>
-        {slot1} {slot2} {slot3}
-      </p>
-      <p>
+    <div className="Machine">
+      <ul className="list">
+        <li>{slot1}</li>
+        <li>{slot2}</li>
+        <li>{slot3}</li>
+      </ul>
+      <label className="result" htmlFor="textInput">
         {winner ? 'You Win!' : 'You Loose!'} 
-      </p>
+      </label>
     </div>
     )
   }
