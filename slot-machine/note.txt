@@ -1,0 +1,18 @@
+Another way to style our component is by embed css directly of it. 
+e.g.,
+
+      <label
+        style={{fontSize: '2em', color: 'hsla(208, 100%, 97%, 0.714)'}}
+        className="result" htmlFor="textInput">
+        {winner ? 'You Win!' : 'You Loose!'} 
+      </label>
+
+  Note that:
+   *Style has double breakers {{}}
+   *Instead of writing class we use camelCase in React and the correct way to
+      declare it is =>  className
+   *Same situation above happens with attributes that use kebab-case this they
+      must be written with cameCase as well.
+      e.g., font-size  = fontSize
+   *The value we give for each attribute must be written inside '' or ""
+   *Each attribute with its value, must be separated by comas.

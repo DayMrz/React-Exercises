@@ -7,16 +7,17 @@ body {
 }
 
 .title {
-  color: rgb(7, 13, 86);
+  color: hsl(235, 85%, 18%);
   text-transform: uppercase;
 }
 
 .Machine {
-  background-color: #7f5a83;
+  background-color: hsl(294, 19%, 43%);
   background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  box-shadow: 0 5px 10px hsl(294, 18%, 30%);
   align-items: center;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 2px solid hsl(0, 0%, 0%);
   display: flex;
   flex-direction: column;
   margin-bottom: 1em;
@@ -29,17 +30,20 @@ body {
 }
 
 .list li {
-  background-color: rgb(227, 212, 212);
+  background-color: hsl(0, 21%, 86%);
   border-radius: 8px;
-  border: 2px solid black;
+  border: 2px solid hsl(0, 0%, 0%);
   font-size: 1.2em;
   list-style: none;
   padding: 1em;
 }
 
-.result {
-  color: rgba(240, 248, 255, 0.712);
-  font-size: 2em;
+.winner {
+  color: rgb(13, 215, 13);
+}
+
+.looser {
+  color: rgb(245, 13, 13) ;
 }
 
 

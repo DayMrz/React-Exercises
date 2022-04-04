@@ -9,9 +9,11 @@ class Machine extends React.Component {
         <li>{slot2}</li>
         <li>{slot3}</li>
       </ul>
-      <label className="result" htmlFor="textInput">
-        {winner ? 'You Win!' : 'You Loose!'} 
-      </label>
+      <p 
+        className={winner ? 'winner' : 'looser'}
+        style={{fontSize:'2em'}}>
+          {winner ? 'You Win!' : 'You Lose!'} 
+      </p>
     </div>
     )
   }
